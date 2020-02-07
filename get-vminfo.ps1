@@ -4,5 +4,4 @@
         @{N="NicPortGroup";E={(Get-NetworkAdapter -VM $_.Name).NetworkName}},
         MemoryGB,NumCpu,
         @{N="ToolsStatus";E={$_.ExtensionData.Summary.guest.ToolsRunningStatus}}
-
 }
